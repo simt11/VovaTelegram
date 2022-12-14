@@ -31,6 +31,7 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun createDrawer() {
+
         drawer = DrawerBuilder()
             .withActivity(this)
             .withToolbar(toolbar)

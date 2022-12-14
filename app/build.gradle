@@ -5,12 +5,12 @@ plugins {
 
 android {
     namespace 'com.example.vovatelegram'
-    compileSdk 32
+    compileSdk 33
 
     defaultConfig {
         applicationId "com.example.vovatelegram"
         minSdk 27
-        targetSdk 32
+        targetSdk 33
         versionCode 1
         versionName "1.0"
 
@@ -45,7 +45,7 @@ dependencies {
     androidTestImplementation 'androidx.test.ext:junit:1.1.4'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.0'
 
-    implementation 'com.mikepenz:materialdrawer:7.0.0-rc08'
+    implementation 'com.mikepenz:materialdrawer:7.0.0'
 
 //required support lib modules
     implementation "androidx.recyclerview:recyclerview:1.2.1"
@@ -55,10 +55,15 @@ dependencies {
 
 
 // Add for NavController support
-    implementation "com.mikepenz:materialdrawer-nav:7.0.0-rc08"
+    implementation "com.mikepenz:materialdrawer-nav:7.0.0"
+
+
+    def lifecycle_version = "2.4.0"
+    implementation "androidx.lifecycle:lifecycle-viewmodel:$lifecycle_version"
+    implementation "androidx.lifecycle:lifecycle-viewmodel-ktx:$lifecycle_version"
 
 // Add for Android-Iconics support
-    implementation "com.mikepenz:materialdrawer-iconics:7.0.0-rc08"
+    //implementation "com.mikepenz:materialdrawer-iconics:7.0.0"
 }
 
 
